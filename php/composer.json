@@ -1,0 +1,14 @@
+{
+    "name": "enigmaproxy/customer-api",
+    "description": "Official EnigmaProxy Customer API PHP client.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "classmap": [
+            "EnigmaProxyClient.php"
+        ]
+    }
+}
