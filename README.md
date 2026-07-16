@@ -56,7 +56,6 @@ cd enigmaproxy-customer-api
 enigmaproxy-customer-api/
 
 README.md
-LICENSE
 
 python/
 ├── EnigmaProxyClient.py
@@ -65,8 +64,7 @@ python/
 
 nodejs/
 ├── EnigmaProxyClient.js
-├── example.js
-└── package.json
+└── example.js
 
 php/
 ├── EnigmaProxyClient.php
@@ -81,8 +79,7 @@ go/
 curl/
 ├── get-packages.sh
 ├── get-package.sh
-├── generate-proxy.sh
-└── README.md
+└── generate-proxy.sh
 ```
 
 ------------------------------------------------------------------------
@@ -138,7 +135,7 @@ print_r($client->getPackages());
 ### Go
 
 ``` go
-client := enigmaproxy.New("YOUR_API_KEY")
+client := New("YOUR_API_KEY")
 
 packages, err := client.GetPackages()
 ```
@@ -148,7 +145,8 @@ packages, err := client.GetPackages()
 ``` bash
 curl -X GET \
 "https://enigmaproxy.net/api/customer/packages" \
--H "Authorization: Bearer YOUR_API_KEY"
+-H "Authorization: Bearer YOUR_API_KEY" \
+-H "Content-Type: application/json"
 ```
 
 ------------------------------------------------------------------------
@@ -169,17 +167,15 @@ curl -X GET \
 
 ## Products
 
-  Product                  Use Case
-  ------------------------ --------------------------------------
-  Budget Residential       Cost-effective scraping & automation
-  Residential              General purpose proxy workloads
-  Enterprise Residential   Large-scale data collection
-  Unlimited ISP            Long-running sessions
-  Static ISP               Stable persistent IPs
-  IPv6                     IPv6 connectivity
-  Datacenter               High-speed automation
-
-------------------------------------------------------------------------
+| Product | Use Case |
+|---------|----------|
+| Budget Residential | Cost-effective scraping & automation |
+| Residential | General-purpose proxy workloads |
+| Enterprise Residential | Large-scale data collection |
+| Unlimited ISP | Long-running sessions |
+| Static ISP | Stable persistent IPs |
+| IPv6 | IPv6 connectivity |
+| Datacenter | High-speed automation |-----------------------------------------------------------
 
 ## Learn More
 
